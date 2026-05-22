@@ -27,15 +27,21 @@ with open("citations.html", "w", encoding="utf-8") as f:
     f.write("<link rel='stylesheet' href='style.css'>")
     f.write("</head>\n")
 
+
     f.write("<body>\n")
+    f.write("  <div class='header-quote'>“</div>\n")
+    f.write("  <div class='header-line'></div>\n")
+    f.write("  <main class='container'>\n")
 
     for i in range(len(citations)):
-        f.write("  <div class='item'>\n")
-        f.write(f"    <p>{citations[i]["texte"]}</p>\n")
-        f.write(f"    <p>— {citations[i]["auteur"]}</p>\n")
+        f.write("  <div class='card'>\n")
+        f.write("    <div class='quote-icon'>“</div>\n")
+        f.write(f"    <p class='quote'>{citations[i]['texte']}</p>\n")
+        f.write("    <div class='line'></div>\n")
+        f.write(f"    <p class='author'>{citations[i]['auteur']}</p>\n")
         f.write("  </div>\n\n")
+
+    f.write("  </main>\n")
     f.write("</body>\n")
-    f.write("</html>\n")
 
-
-print("5 citationns ajoutées")
+print("5 citations ajoutées")

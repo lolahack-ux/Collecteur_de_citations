@@ -1,0 +1,64 @@
+body {
+    margin: 0;
+    font-family: Georgia, serif;
+    background: linear-gradient(135deg, #f3efff, #fff2df);
+    min-height: 100vh;
+    padding: 35px;
+}
+
+.header-quote {
+    text-align: center;
+    font-size: 70px;
+    color: #8b6fd6;
+    font-weight: bold;
+    line-height: 0.8;
+}
+
+.header-line {
+    width: 70px;
+    height: 2px;
+    background: #8b6fd6;
+    margin: 10px auto 30px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.card {
+    background: white;
+    width: 260px;
+    min-height: 170px;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+.quote-icon {
+    font-size: 42px;
+    color: #8b6fd6;
+    font-weight: bold;
+    line-height: 0.8;
+}
+
+.quote {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #222;
+}
+
+.line {
+    width: 35px;
+    height: 1px;
+    background: #8b6fd6;
+    margin: 15px 0;
+}
+
+.author {
+    color: #6d58b8;
+    font-size: 15px;
+    font-weight: bold;
+}
